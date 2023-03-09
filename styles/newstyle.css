@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.nav-buttons{
+    margin-left: 40%;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 35px;
+   
+    font-weight: 700;
+}
+
+
+h3{
+    font-size: 20px;
+ 
+    font-weight: 600;
+}
+
+h4{
+    font-size: 25px;
+    line-height:50px;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 16px;
+
+    font-weight: 400;
+}
+
+
+h6{
+    
+    
+}
+
+.sec{
+    font-weight: 600;
+    font-size: 35px;
+    
+}
+
+
+
+
+.navbar{
+    font-size: 16px !important;
+    padding-top: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(27, 3, 3, 0.03);
+    background-color: #FFF7FA;
+    font-weight: 600;
+
+   
+}
+
+.navbar .logo img{
+    height: 35px;
+    width: 150px;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+
+    padding:0 20px;
+    color: #000;
+    transition: 0.4s ease;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover{
+    color: #EF4991;
+
+}
+
+
+ 
+
+
+
+
+
+
+.navbar i{
+    font-size: 1rem;
+    padding:0 0.7px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+@media only screen and(max-width:990px) {
+    .nav-buttons{
+        margin:10px;
+    }
+
+    .nav-buttons ul{
+        margin:1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fas{
+        margin:20px 5px 10px 20px;
+    }
+}
+
+
+
+#Home{
+   
+    width:100%;
+    height:110vh;
+    background-size: cover;
+    
+    background-position-y:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#Home span{
+    color:#EF4991;
+}
+
+#Home button{
+    background-color:#EF4991;
+    color:#FFF7FA;
+    border:0;
+    padding: 14px 65px 14px 65px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#Home button:hover{
+    background-color:black;
+   
+
+}
+
+
+
+#features{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+   
+
+}
+
+
+#features .one {
+
+text-align:center;
+padding:10px 5px;
+box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+background-color:#FFF7FA;
+
+margin-left: 35px;
+
+}
+
+
+#features .detail h5{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+
+#features .one img{
+    width:30px;
+    height:30px;
+    margin-bottom:10px;
+
+}
+
+#features .detail h5:hover{
+    color: #EF4991;
+}
+
+#features .one:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+
+/*category*/
+
+#cat .one img{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s ease;
+   
+    height:80%;
+    
+
+}
+
+#cat .one:hover img{
+    transform:scale(1.2);
+    opacity: .7;
+
+
+}
+
+
+
+#cat .one{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    height:80%;
+
+}
+
+#cat .one .catname{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#FFF7FA;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+/*trending Now*/
+
+/*
+
+.product-inner-box .icons{
+    right:15px;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    top:-3%;
+    transition: all 0.2s ease-in-out,transform 0.2 ease-in-out,opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.product-inner-box .icons a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: green;
+}
+
+.product-inner-box .onsale .badge{
+    background: #000;
+    font-size: 12px;
+    padding:5px 14px;
+    top:0px;
+}
+
+.product-inner-box .onsale .badge:before{
+    border-width:10px 0px 0px 10px;
+    border-color: transparent transparent transparent #000; 
+    content:"";
+    position:absolute;
+    right:-8px;
+    width: 0;
+    bottom:0;
+
+
+}
+
+*/
+
+
+
+/*trending Now*/
+
+#trending .product{
+    cursor: pointer;
+    padding: 2rem 2rem;
+  
+    margin:15px 0px;
+    transition:0.2s ease;
+    position:relative;
+  
+
+}
+
+
+#trending .product:hover{
+    box-shadow: 10px 10px 35px rgba(70,62,221,0.1);
+    background-color:#FFF7FA ;
+}
+
+
+
+#trending .cart-btn{
+    padding: 0px 2px;
+    
+}
+
+#trending .cart-btn button{
+    background-color:#FFF7FA;
+    padding: 8px 10px;
+    color: black;
+    font-weight: 600;
+
+
+}
+
+#trending .cart-btn button:hover{
+    background-color: black;
+    color:#FFF7FA;
+    font-weight: 500;
+
+}
+
+
+
+/*footer*/
+
+
+
+#newsletter{
+    background-color:#FFF7FA ;
+    padding: 0;
+    margin: 0;
+}
+
+#newsletter p span{
+    color:#EF4991;
+}
+
+
+
+#newsletter .big{
+   padding-top: 3rem;
+ 
+}
+
+
+#newsletter .btn-primary{
+    background-color: #EF4991;
+    border:0px;
+
+
+}
+
+
+.logo2 img{
+    height: 35px;
+    width: 150px;
+}
+
+
+.footer .p1{
+    
+    color: #465b52;
+
+}
+
+.footer h6{
+    color: black;
+}
+
+
+
+.footer p{
+    
+    color: #000000;
+   
+
+
+}
+
+
+.footer .text-reset{
+    
+   
+    text-decoration: none;
+
+
+ 
+    
+
+}
+
+
+.text-reset i{
+color: black;
+}
+
+.text-reset i:hover{
+    color: #EF4991;
+    }
+
+ .footer p:hover{
+    color: #EF4991;
+    
+}
+
+.text-center{
+    color: black;
+    margin-top: 50px;
+   
+}
+
+.text-center a{
+    text-decoration: none;
+}
+
+
+.footer h6{
+    font-weight: 700;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
